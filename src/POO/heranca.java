@@ -10,5 +10,5 @@ package POO;
  * @author gabriel.rvital
  */
 public class heranca {
-    
+    int a = 0;
 }
