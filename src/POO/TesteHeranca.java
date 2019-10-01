@@ -51,6 +51,20 @@ public class TesteHeranca {
         Conta cc3 = new ContaNegocio(500, 1008, "Carlos", 1000.0);
         cc3.saque(200.0);
         System.out.println(cc3.getSaldo());
+
+        //POLIMORFISMO
+        /*é quando uma classe no nosso caso CONTA tem o mesmo metodo em 2 subclasses diferentes Ocasionando um comportamento diferente em 
+        cada uma das classes por exemplo:*/
+        Conta account1 = new Conta(221, "Gabriel Vital", 13.5);
+        Conta account2 = new ContaPoupanca(13.5, 221, "Gabriel Vital", 100);
+        /*Possuimos 2 objetos do tipo conta porem cada um com a sua sub classe especifica.*/
+        account1.saque(3);
+        account2.saque(38);
+        System.out.println(account1.getSaldo());
+        System.out.println(account2.getSaldo());
+        /*Então polimorfismo é nada mais do que um classe que existe subclasses com o mesmo metodos que podem ser aplicados e executam
+        taferas diferentes.*/
+        
     }
 
 }
